@@ -165,7 +165,7 @@ const EXTENDED_KEYS_TERMINALS = [
 /** True if this terminal correctly handles extended key reporting
  *  (Kitty keyboard protocol + xterm modifyOtherKeys). */
 export function supportsExtendedKeys(): boolean {
-  // Cluadex defaults this off because some real terminals render the UI
+  // PUNA defaults this off because some real terminals render the UI
   // but stop delivering normal typing once kitty/modifyOtherKeys negotiation
   // is enabled. Power users can opt back in explicitly.
   if (process.env.CLAUDEX_ENABLE_EXTENDED_KEYS !== '1') {

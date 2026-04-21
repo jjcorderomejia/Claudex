@@ -17,7 +17,7 @@ import { isTelemetryDisabled } from '../../utils/privacyLevel.js'
  * - Privacy level is no-telemetry or essential-traffic
  */
 export function isAnalyticsDisabled(): boolean {
-  // Cluadex does not send product telemetry.
+  // PUNA does not send product telemetry.
   return true
 }
 

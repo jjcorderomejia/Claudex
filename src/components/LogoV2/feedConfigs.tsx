@@ -41,7 +41,7 @@ export function createWhatsNewFeed(releaseNotes: string[]): FeedConfig {
   });
   const emptyMessage = "external" === 'ant' ? 'Unable to fetch latest claude-cli-internal commits' : 'Check /release-notes for recent updates';
   return {
-    title: "external" === 'ant' ? "Cluadex Updates [ANT-ONLY: Latest CC commits]" : "Cluadex Updates",
+    title: "external" === 'ant' ? "PUNA Updates [ANT-ONLY: Latest CC commits]" : "PUNA Updates",
     lines,
     footer: lines.length > 0 ? '/release-notes for more' : undefined,
     emptyMessage
@@ -73,7 +73,7 @@ export function createProjectOnboardingFeed(steps: Step[]): FeedConfig {
 }
 export function createGuestPassesFeed(): FeedConfig {
   const reward = getCachedReferrerReward();
-  const subtitle = reward ? `Share Cluadex and earn ${formatCreditAmount(reward)} of extra usage` : 'Share Cluadex with friends';
+  const subtitle = reward ? `Share PUNA and earn ${formatCreditAmount(reward)} of extra usage` : 'Share PUNA with friends';
   return {
     title: '3 guest passes',
     lines: [],

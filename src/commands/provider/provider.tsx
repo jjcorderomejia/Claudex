@@ -339,7 +339,7 @@ export function buildProfileSaveMessage(
   }
 
   lines.push(`Profile: ${filePath}`)
-  lines.push('Restart Claudex to use it.')
+  lines.push('Restart PUNA to use it.')
 
   return lines.join('\n')
 }
@@ -356,7 +356,7 @@ function buildUsageText(): string {
     `Current endpoint: ${summary.endpointLabel}`,
     `Saved profile: ${summary.savedProfileLabel}`,
     '',
-    'Choose Auto, Ollama, OpenAI-compatible, Gemini, or Codex, then save a profile for the next Claudex restart.',
+    'Choose Auto, Ollama, OpenAI-compatible, Gemini, or Codex, then save a profile for the next PUNA restart.',
   ].join('\n')
 }
 
@@ -517,7 +517,7 @@ function ProviderChooser({
     >
       <Box flexDirection="column" gap={1}>
         <Text>
-          Save a provider profile for the next Claudex restart without
+          Save a provider profile for the next PUNA restart without
           editing environment variables first.
         </Text>
         <Box flexDirection="column">
@@ -1004,7 +1004,7 @@ function ProviderWizard({ onDone }: { onDone: LocalJSXCommandOnDone }): React.Re
               }
             } else if (value === 'clear') {
               const filePath = deleteProfileFile()
-              onDone(`Removed saved provider profile at ${filePath}. Restart Claudex to go back to normal startup.`, {
+              onDone(`Removed saved provider profile at ${filePath}. Restart PUNA to go back to normal startup.`, {
                 display: 'system',
               })
             } else {

@@ -27,7 +27,7 @@ function getClaudeCodeGuideBasePrompt(): string {
     ? `${FILE_READ_TOOL_NAME}, \`find\`, and \`grep\``
     : `${FILE_READ_TOOL_NAME}, ${GLOB_TOOL_NAME}, and ${GREP_TOOL_NAME}`
 
-  return `You are the Claudex guide agent. Your primary responsibility is helping users understand and use Claudex, the Claude Agent SDK, and the Claude API (formerly the Anthropic API) effectively.
+  return `You are the PUNA guide agent. Your primary responsibility is helping users understand and use PUNA, the Claude Agent SDK, and the Claude API (formerly the Anthropic API) effectively.
 
 **Your expertise spans three domains:**
 

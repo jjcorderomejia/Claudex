@@ -250,8 +250,8 @@ export function LogoV2() {
   }
   const layoutMode = getLayoutMode(columns);
   const userTheme = resolveThemeSetting(getGlobalConfig().theme);
-  const borderTitle = ` ${color("text", userTheme)("Cluadex")} ${color("inactive", userTheme)(`v${version}`)} `;
-  const compactBorderTitle = color("text", userTheme)(" Cluadex ");
+  const borderTitle = ` ${color("text", userTheme)("PUNA")} ${color("inactive", userTheme)(`v${version}`)} `;
+  const compactBorderTitle = color("text", userTheme)(" PUNA ");
   if (layoutMode === "compact") {
     let welcomeMessage = formatWelcomeMessage(username);
     if (stringWidth(welcomeMessage) > columns - 4) {
@@ -364,7 +364,7 @@ export function LogoV2() {
   const t17 = 1;
   let t18;
   if ($[46] !== welcomeMessage_0) {
-    t18 = <Box marginTop={1} flexDirection="column" alignItems="center"><Text bold={true}>Cluadex</Text><Text dimColor={true}>open terminal for any LLM</Text><Text color="inactive">•</Text><Text bold={true}>{welcomeMessage_0}</Text></Box>;
+    t18 = <Box marginTop={1} flexDirection="column" alignItems="center"><Text bold={true}>PUNA</Text><Text dimColor={true}>open terminal for any LLM</Text><Text color="inactive">•</Text><Text bold={true}>{welcomeMessage_0}</Text></Box>;
     $[46] = welcomeMessage_0;
     $[47] = t18;
   } else {

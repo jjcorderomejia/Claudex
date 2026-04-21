@@ -3772,7 +3772,7 @@ const clearSessionCaches = (_preservedAgentIds?: Set<string>): void => { };
         pendingHookMessages
       }, renderAndRun);
     }
-  }).version(`${MACRO.DISPLAY_VERSION ?? MACRO.VERSION} (Cluadex)`, '-v, --version', 'Output the version number');
+  }).version(`${MACRO.DISPLAY_VERSION ?? MACRO.VERSION} (PUNA)`, '-v, --version', 'Output the version number');
 
   // Worktree flags
   program.option('-w, --worktree [name]', 'Create a new git worktree for this session (optionally specify a name)');

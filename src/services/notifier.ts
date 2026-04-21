@@ -35,7 +35,7 @@ export async function sendNotification(
   })
 }
 
-const DEFAULT_TITLE = 'Cluadex'
+const DEFAULT_TITLE = 'PUNA'
 
 async function sendToChannel(
   channel: string,

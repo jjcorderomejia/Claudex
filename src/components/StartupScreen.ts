@@ -1,5 +1,5 @@
 /**
- * Claudex startup screen — banner, themes, provider info box.
+ * PUNA startup screen — banner, themes, provider info box.
  * Called once at CLI startup before the Ink UI renders.
  *
  * Theme selection (unified with /theme command):
@@ -167,15 +167,15 @@ function resolveTheme(): Theme {
   return THEMES[name] ?? THEMES.sunset
 }
 
-// ─── Claudex ASCII Banner ─────────────────────────────────────────────────────
+// ─── PUNA ASCII Banner ────────────────────────────────────────────────────────
 
 const BANNER = [
-  ` \u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2557      \u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2557   \u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2557 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2557  \u2588\u2588\u2557`,
-  `\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u2588\u2588\u2551     \u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2551   \u2588\u2588\u2551\u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2557\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255d\u255a\u2588\u2588\u2557\u2588\u2588\u2554\u255d`,
-  `\u2588\u2588\u2551     \u2588\u2588\u2551     \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2551\u2588\u2588\u2551   \u2588\u2588\u2551\u2588\u2588\u2551  \u2588\u2588\u2551\u2588\u2588\u2588\u2588\u2588\u2557   \u255a\u2588\u2588\u2588\u2554\u255d `,
-  `\u2588\u2588\u2551     \u2588\u2588\u2551     \u2588\u2588\u2554\u2550\u2550\u2588\u2588\u2551\u2588\u2588\u2551   \u2588\u2588\u2551\u2588\u2588\u2551  \u2588\u2588\u2551\u2588\u2588\u2554\u2550\u2550\u255d   \u2588\u2588\u2554\u2588\u2588\u2557 `,
-  `\u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2551  \u2588\u2588\u2551\u255a\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255d\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2551 \u255a\u2588\u2588\u2557`,
-  ` \u255a\u2550\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u255d  \u255a\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u255d \u255a\u2550\u2550\u2550\u2550\u2550\u2550\u255d\u255a\u2550\u255d  \u255a\u2550\u255d`,
+  ' ██████╗ ██╗   ██╗███╗   ██╗ █████╗ ',
+  ' ██╔══██╗██║   ██║████╗  ██║██╔══██╗',
+  ' ██████╔╝██║   ██║██╔██╗ ██║███████║',
+  ' ██╔═══╝ ██║   ██║██║╚██╗██║██╔══██║',
+  ' ██║     ╚██████╔╝██║ ╚████║██║  ██║',
+  ' ╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝',
 ]
 
 // ─── Provider detection ───────────────────────────────────────────────────────
@@ -273,14 +273,6 @@ export function printStartupScreen(): void {
     out.push(paintLine(BANNER[i], theme.grad, t))
   }
 
-  // ── Dev credit line ──
-  out.push('')
-  out.push(
-    `  ${DIM}${rgb(...theme.dim)}// dev: ${RESET}` +
-    `${rgb(...theme.cream)}Lakshmikanthan K${RESET}` +
-    `${DIM}${rgb(...theme.dim)} · github.com/l3tchupkt${RESET}`,
-  )
-  out.push('')
 
   // ── Provider info box ──
   out.push(`${rgb(...theme.border)}╔${'═'.repeat(W - 2)}╗${RESET}`)
@@ -319,7 +311,7 @@ export function printStartupScreen(): void {
 
   // ── Footer: version ──
   out.push(
-    `  ${DIM}${rgb(...theme.dim)}Claudex ${RESET}` +
+    `  ${DIM}${rgb(...theme.dim)}PUNA ${RESET}` +
     `${rgb(...theme.accent)}v${MACRO.DISPLAY_VERSION ?? MACRO.VERSION}${RESET}`,
   )
   out.push('')

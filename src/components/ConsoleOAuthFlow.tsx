@@ -460,7 +460,7 @@ function OAuthStatusMessage(t0) {
         let t2;
         let t3;
         if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-          t2 = <Text>Claudex supports OpenAI-compatible providers (GPT-4o, DeepSeek, Ollama, Groq), NVIDIA AI (NIM), Google Gemini, Amazon Bedrock, Microsoft Foundry, and Vertex AI. Run <Text bold={true}>/provider</Text> to save a provider profile, or set the required environment variables manually, then restart Claudex.</Text>;
+          t2 = <Text>PUNA supports OpenAI-compatible providers (GPT-4o, DeepSeek, Ollama, Groq), NVIDIA AI (NIM), Google Gemini, Amazon Bedrock, Microsoft Foundry, and Vertex AI. Run <Text bold={true}>/provider</Text> to save a provider profile, or set the required environment variables manually, then restart PUNA.</Text>;
           t3 = <Text>If you are part of an enterprise organization, contact your administrator for setup instructions.</Text>;
           $[13] = t2;
           $[14] = t3;
@@ -492,7 +492,7 @@ function OAuthStatusMessage(t0) {
         let t7;
         if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
             t7 = <Box flexDirection="column" marginTop={1}>{t4}
-              <Text>· Guided setup inside Claudex:{"\n"}{"  "}/provider</Text>
+              <Text>· Guided setup inside PUNA:{"\n"}{"  "}/provider</Text>
               <Text>· OpenAI / any OpenAI-compatible provider (GPT-4o, DeepSeek, Ollama, Groq):{"\n"}{"  "}CLAUDE_CODE_USE_OPENAI=1  OPENAI_API_KEY=sk-...  OPENAI_MODEL=gpt-4o</Text>
               <Text>· Google Gemini (free key at https://aistudio.google.com/apikey):{"\n"}{"  "}CLAUDE_CODE_USE_GEMINI=1  GEMINI_API_KEY=your-key</Text>
             {t5}{t6}<Text>· Vertex AI:{" "}<Link url="https://code.claude.com/docs/en/google-vertex-ai">https://code.claude.com/docs/en/google-vertex-ai</Link></Text></Box>;

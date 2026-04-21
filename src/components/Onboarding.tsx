@@ -73,7 +73,7 @@ export function Onboarding({
       <Text bold>Choose your AI provider:</Text>
       <Box flexDirection="column" width={70} gap={1}>
         <Text dimColor>
-          Select which AI provider you want to use with Claudex.
+          Select which AI provider you want to use with PUNA.
           You can change this later with /provider command.
         </Text>
         <Select

@@ -227,7 +227,7 @@ export async function openCurrentSessionInDesktop(): Promise<{
   if (!opened) {
     return {
       success: false,
-      error: 'Failed to Cluadex Desktop. Please try opening it manually.',
+      error: 'Failed to PUNA Desktop. Please try opening it manually.',
       deepLinkUrl,
     }
   }

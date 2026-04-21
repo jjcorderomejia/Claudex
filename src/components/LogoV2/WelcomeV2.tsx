@@ -13,7 +13,7 @@ export function WelcomeV2() {
     return (
       <AppleTerminalWelcomeV2 
         theme={theme} 
-        welcomeMessage="Welcome to Cluadex" 
+        welcomeMessage="Welcome to PUNA" 
       />
     );
   }
@@ -21,7 +21,7 @@ export function WelcomeV2() {
   return (
     <Box width={WELCOME_V2_WIDTH}>
       <Text>
-        <Text color="claude">{"Welcome to Cluadex"} </Text>
+        <Text color="claude">{"Welcome to PUNA"} </Text>
         <Text dimColor={true}>v{MACRO.DISPLAY_VERSION ?? MACRO.VERSION} </Text>
       </Text>
     </Box>
