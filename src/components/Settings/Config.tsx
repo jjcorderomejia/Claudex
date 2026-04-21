@@ -1577,9 +1577,6 @@ export function Config({
         </Box>}
     </Box>;
 }
-  if (value === null) return "Default (leader's model)";
-  return modelDisplayString(value);
-}
 const THEME_LABELS: Record<string, string> = {
   auto: 'Auto (match terminal)',
   dark: 'Dark mode',
